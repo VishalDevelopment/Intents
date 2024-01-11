@@ -2,4 +2,11 @@
     <string name="app_name">Test</string>
     <string name="share_your_code_and_coffee_here">Share Your Code and Coffee here</string>
     <string name="github">GitHub</string>
+    <string name="it_is_new_screen">It is new Screen</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="call_now">Call Now</string>
+    <string name="camera_app">Camera App</string>
+    <string name="explicit_click">Explicit Click</string>
+    <string name="implicit_click">Implicit Click</string>
+    <string name="todo">TODO</string>
 </resources>

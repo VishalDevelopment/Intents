@@ -4,72 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Implicit_Activity"
-    android:background="#2B2727">
+    android:background="#2B2727"
+    tools:context=".ImplicitActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/web"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-
-        android:text="Web Browser"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_design"
+        android:text="@string/web_browser"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:background="@drawable/btn_design"
-
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
-        android:layout_marginTop="150dp"
-
-
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/call"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-
-        android:text="Call Now"
+        android:background="@drawable/btn_design"
+        android:text="@string/call_now"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:background="@drawable/btn_design"
-
-        app:layout_constraintTop_toBottomOf="@id/web"
         app:layout_constraintBottom_toTopOf="@id/camera"
-
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
-
-
-
-        />
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/web" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/camera"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-
-        android:text="Camera App"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/btn_design"
+        android:text="@string/camera_app"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:background="@drawable/btn_design"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
-        android:layout_marginBottom="150dp"
-
-
-        />
-
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

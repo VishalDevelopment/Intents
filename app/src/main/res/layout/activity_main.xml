@@ -4,48 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#2B2727">
+    android:background="#2B2727"
+    tools:context=".MainActivity">
 
-   <androidx.appcompat.widget.AppCompatButton
-       android:id="@+id/ex_btn"
-       android:layout_width="150dp"
-       android:layout_height="wrap_content"
-
-       android:text="Explicit Click"
-       android:textAlignment="center"
-       android:textColor="@color/white"
-       android:background="@drawable/btn_design"
-
-
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-
-       android:layout_marginTop="150dp"
-
-
-       />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ex_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_design"
+        android:text="@string/explicit_click"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/im_btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-
-        android:text="Implicit Click"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
         android:layout_marginBottom="150dp"
-
         android:background="@drawable/btn_design"
-
-
-        />
-
+        android:text="@string/implicit_click"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
