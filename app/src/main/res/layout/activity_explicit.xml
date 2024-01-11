@@ -7,16 +7,59 @@
     android:background="#2B2727"
     tools:context=".ExplicitActivity">
 
-    <TextView
+  <EditText
+      android:id="@+id/editTxt"
+      android:layout_width="250dp"
+      android:layout_height="50dp"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+
+      android:layout_marginTop="150dp"
+
+      android:hint="Enter Your Name"
+      android:textColorHint="#6F6767"
+      android:textAlignment="center"
+
+      android:background="@drawable/edit_text"
+
+      />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:text="@string/it_is_new_screen"
+
+        app:layout_constraintStart_toStartOf="@+id/editTxt"
+        app:layout_constraintEnd_toEndOf="@id/editTxt"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt"
+
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_design"
+
+        android:text="Go"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+  <TextView
+      android:id="@+id/heading"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+
+      android:text="Data Passing"
+      android:textSize="30sp"
+      android:fontFamily="monospace"
+      android:textColor="@color/white"
+
+      android:textAlignment="center"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="50dp"
+
+      />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
