@@ -4,59 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splashScreen"
-    android:background="#2B2727">
+    android:background="#2B2727"
+    tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/splashLogo"
         android:layout_width="180dp"
         android:layout_height="180dp"
-
-        android:src="@drawable/github_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-
         android:layout_marginTop="150dp"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/github"
-
-        android:textSize="20sp"
-        android:textColor="@color/white"
-
-        app:layout_constraintStart_toStartOf="@id/splashLogo"
-        app:layout_constraintEnd_toEndOf="@id/splashLogo"
-        app:layout_constraintTop_toBottomOf="@id/splashLogo"
-
-        android:layout_marginTop="15dp"
-
-        style="@style/TextAppearance.AppCompat.Subhead"
-        android:fontFamily="monospace"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/share_your_code_and_coffee_here"
-        android:textSize="12sp"
-        android:fontFamily="casual"
-        android:textColor="@color/white"
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/github_logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="@string/github"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/splashLogo"
+        app:layout_constraintStart_toStartOf="@id/splashLogo"
+        app:layout_constraintTop_toBottomOf="@id/splashLogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-
-        />
-
-
-
+        android:fontFamily="casual"
+        android:text="@string/share_your_code_and_coffee_here"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
