@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="share_your_code_and_coffee_here">Share Your Code and Coffee here</string>
+    <string name="github">GitHub</string>
+</resources>
